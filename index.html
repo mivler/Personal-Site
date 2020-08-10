@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&family=Kaushan+Script&family=Ubuntu:wght@300&display=swap">
+    <link rel="icon" href="favicon.ico">
+    <title>Matthew Ivler</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="my-name">Matthew Ivler</h1>
+        <nav class="nav-bar">
+            <a class="nav-item" href="index.html">Home</a> | 
+            <a class="nav-item" href="#resume">Résumé</a> |
+            <a class="nav-item" href="https://open.spotify.com/show/5lf8Q4DMyUO5EqAm1iiray">Podcast</a> |
+            <a class="nav-item" href="https://github.com/mivler">Github</a> |
+            <a class="nab-item" href="www.linkedin.com/in/matthew-ivler-7baa87174">LinkedIn</a>
+        </nav>
+    </header> 
+    
+    <div class="middle-container">
+
+        <div class="opening-container">
+            <div class="image-block">
+                <img class="img0 current-image" src="images/Vancouver_Fountain_Pic.jpg">
+                <img class="img1" src="images/Sherman_friends.jpg">
+                <img class="img2" src="images/Pom_with_Jina.jpg">
+                <img class="img3" src="images/Mont_bay.jpg">
+                <img class="img4" src="images/Arizona_Trip.jpg">
+                <img class="img5" src="images/GChoi.jpg">
+                <img class="img6" src="images/Major_Declaration.jpg">
+                <img class="img7" src="images/Canada_SusBridge.jpg">
+                <div class="image-switcher">
+                    <button class="left-switcher" onclick="photoSwitch(-1)">←</button>
+                    <button class="right-switcher" onclick="photoSwitch(1)">→</button>
+                </div>
+            </div>
+
+            <div class="opening-text">
+                <h2 class="name">Hi, I am Matt!</h2>
+                <br>
+                <p class="intro">
+                    I am Economics/Computer Science double major at Pomona College. Though I spend much of my time with school, projects, 
+                    and work, I try to make time for cohosting my podcast, practicing magic tricks, boxing routines, 
+                    and playing Dungeons and Dragons. If you're ever unable to find me, just keep an eye out for my bucket hat, and I'm sure you'll find 
+                    me in no time. I hope you find whatever you're looking for here.
+                </p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div id="resume">
+            <h2 class="title-card">Résumé</h2>
+        
+
+            <div class="dropdown top-slot">
+                <h3  class="clickable" onclick="collapseDropdown(0)">Education</h3>
+            </div>
+
+
+            <div id="education-content" class="resume-section collapsed top-slot">
+                <h3 class="clickable" onclick="collapseDropdown(0)">Education</h3>
+                <div class="resume-entry">
+                    <p class="place"><em>Pomona College</em></p>
+                    <p class="dates">August 2018 - May 2022</p>
+                    <div class="description"><ul><li>3.91, Intended Major: Economics</li></ul></div>
+                </div>
+                <div class="resume-entry">
+                    <p class="place"><em>Los Alamitos High School</em></p>
+                    <p class="dates">August 2014 - June 2018</p>
+                    <div class="description"><ul><li>GPA: 4.5, Valedictorian, Principal’s Honor Roll</li></ul></div>
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <h3 class="clickable" onclick="collapseDropdown(1)">Work Experience</h3>
+            </div>
+
+
+            <div id="work" class="resume-section collapsed">
+                <h3 class="clickable" onclick="collapseDropdown(1)">Work Experience</h3>
+                <div class="resume-entry">
+                    <p class="place"><em>Macroeconomics Mentor, Pomona College</em></p>
+                    <p class="dates">January 2019 - Present</p>
+                    <div class="description">
+                        <ul>
+                            <li>
+                                Running mentor sessions to help students understand macroeconomic principles
+                            </li>
+                            <li>
+                                Grading 25 papers weekly for the entire section
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-entry">
+                    <p class="place"><em>Independently Contracted TA, Eureka Program</em></p>
+                    <p class="dates">June 2020 - August 2020</p>
+                    <div class="description">
+                        <ul>
+                            <li>
+                                Teaching high school students critical thinking and research skills
+                            </li>
+                            <li>
+                                Guiding students in developing various research projects about the macroeconomic effects of COVID-19 induced uncertainty 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-entry">
+                    <p class="place"><em>Student Worker, Pomona HPC</em></p>
+                    <p class="dates">March 2020 - May 2020</p>
+                    <div class="description">
+                        <ul>
+                            <li>
+                                Working with LDA Machine Learning tools to create topic models for professors' research
+                            </li>
+                            <li>
+                                Writing various Python scripts (pair programming) to assist in data retrieval, cleaning, and processing
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-entry">
+                    <p class="place"><em>Recreation Leader, City of Los Alamitos</em></p>
+                    <p class="dates">April 2016 - February 2020</p>
+                    <div class="description">
+                        <ul>
+                            <li>
+                                Facilitating and organizing events for 35 to 50 kids in the Summer Day Camp program
+                            </li>
+                            <li>
+                                Collaborating in groups to set up, run, and tear down for city events
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-entry">
+                    <p class="place"><em>Computer Science Mentor, Pomona College</em></p>
+                    <p class="dates">August 2019 - December 2019</p>
+                    <div class="description">
+                        <ul>
+                            <li>
+                                Aiding students in Intro to Computer Science (Python) labs
+                            </li>
+                            <li>
+                                Assessing students’ code on weekly assignments
+                            </li>
+                            <li>
+                                Instructing students in various CS principles (recursion, Big O, data structures)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <h3 class="clickable" onclick="collapseDropdown(2)">Technical Skills</h3>
+            </div>
+
+            
+            <div id="skills" class="resume-section collapsed">
+                <h3 class="clickable" onclick="collapseDropdown(2)">Technical Skills</h3> <!--                    Java Microsoft Office; OCaml; Python; Stata-->
+                <table>
+                    <tr> 
+                        <td class="skill-level"><em>Top Skills</em></td>
+                        <td>
+                            Python
+                        </td>
+                        <td>
+                            Java
+                        </td>
+                        <td>
+                            HTML/CSS
+                        </td>
+                        <td>
+                            MALLET
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="skill-level"><em>Proficient Skills</em></td>
+                        <td>
+                            Microsoft Office
+                        </td>
+                        <td>
+                            OCaml
+                        </td>
+                        <td>
+                            Javascript
+                        </td>
+                        <td>
+                            Linux
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="skill-level"><em>Familiar Skills*</em></td>
+                        <td>
+                            LaTeX
+                        </td>
+                        <td>
+                            Stata
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p class="disclaimer">*Admittedly, I could use some refreshing on these skills, but I have used them numerous times before</p>
+            </div>
+
+
+            <div class="dropdown">
+                <h3 class="clickable" onclick="collapseDropdown(3)">Projects</h3>
+            </div>
+
+
+            <div id="projects" class="resume-section collapsed">
+                <h3 class="clickable" onclick="collapseDropdown(3)">Projects</h3> <!-- •	Airbnb Multi-hosting Analysis, Economies of Scale in School Districts: Student-to-School Effect on Graduation Rates, NASDAQ Dividend Records Web Scraper-->
+                
+                <div class="resume-entry">
+                    <p class="place"><em>Economic Uncertainty in India</em></p>
+                    <p class="dates">February 2020 - Present</p>
+                    <ul>
+                        <li>
+                            Utilizing NLP practices in order to create and analyze a measure of firm-level uncertainty following India's 2016 demonitization event
+                        </li>
+                        <li>
+                            Skills: Python, MALLET, Linux
+                        </li>
+                        <li>
+                            Group Project for Acadmic Research
+                        </li>
+                    </ul>                    
+                </div>
+                
+                <div class="resume-entry">
+                    <p class="place"><em>Darwin Game</em></p>
+                    <p class="dates">January 2020 - February 2020</p>
+                    <ul>
+                        <li>
+                            Creating a Darwin simulator that ran a turn based ecosystem of deterministic "creatures"
+                        </li>
+                        <li>
+                            Developing a team creature to battle other teams' creatures in a competition after completion of the simulator (Our creature won)
+                        </li>
+                        <li>
+                            Skills: Java
+                        </li>
+                        <li>
+                            Paired Programming Project for CS
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resume-entry">
+                    <p class="place"><em>Economies of Scale in School Districts: Student-to-School Effect on Graduation Rates</em></p>
+                    <p class="dates">September 2019 - December 2019</p>
+                    <ul>
+                        <li>
+                            Utilizing econometric models and techniques to find a causal relationship between Student-to-School Ratios and Graduation Rates on the district level
+                        </li>
+                        <li>
+                            Skills: Python, Stata
+                        </li>
+                        <li>
+                            Singular Person Project for Econometrics
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resume-entry">
+                    <p class="place"><em>NASDAQ Dividend Records Web Scraper</em></p>
+                    <p class="dates">August 22, 2019</p>
+                    <ul>
+                        <li>
+                            Scripting a web scraper that took dividend payment records from the NASDAQ site to find companies exhibiting dividend growth
+                        </li>
+                        <li>
+                            Skills: Python
+                        </li>
+                        <li>
+                            Singular Person Project for Fun
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resume-entry">
+                    <p class="place"><em>Airbnd Multi-hosting Analysis</em></p>
+                    <p class="dates">April 2019 - May 2019</p>
+                    <ul>
+                        <li>
+                            Parsing and plotting data from Airbnb listing records to see developments of hosts with multiple listings
+                        </li>
+                        <li>
+                            Skills: Python
+                        </li>
+                        <li>
+                            Singular Person Project for CS
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="dropdown bottom-slot">
+                <h3 class="clickable" onclick="collapseDropdown(4)">Relavent Coursework</h3>
+            </div>
+
+
+            <div id="courses" class="resume-section collapsed bottom-slot">
+                <h3 class="clickable" onclick="collapseDropdown(4)">Relavent Coursework</h3>
+                <ul>
+                    <li>
+                        CS54: Discrete Mathematics and Functional Programming
+                    </li>
+                    <li>
+                        CS62: Data Structures and Advanced Programming
+                    </li>
+                    <li>
+                        MATH60: Linear Algebra
+                    </li>
+                    <li>
+                        ECON102: Microeconomic Theory
+                    </li>
+                    <li>
+                        ECON107: Econometrics
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="bottom-container">
+        <div class="contact-block">
+            <a href="mailto:mnia2018@mymail.pomona.edu">Contact Me</a>
+            <p>Leave an email and I will get to you ASAP!</p>
+        </div>
+        <p id="copyright">© Matthew Ivler 2020</p>
+    </div>
+
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
